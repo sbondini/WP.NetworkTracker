@@ -1,0 +1,17 @@
+<Application x:Class="NetworkTracker.WindowsPhone.App" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:viewModel="using:NetworkTracker.WindowsPhone.ViewModel">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Default">
+                    <ImageBrush x:Key="HubBackgroundImageBrush" ImageSource="Assets/HubBackground.png" />
+                </ResourceDictionary>
+                <ResourceDictionary x:Key="HighContrast">
+                    <ImageBrush x:Key="HubBackgroundImageBrush" ImageSource="{x:Null}" />
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+            <viewModel:ViewModelLocator x:Key="Locator" xmlns:vm="clr-namespace:NetworkTracker.WindowsPhone"/>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
